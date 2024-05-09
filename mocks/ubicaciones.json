@@ -1,0 +1,18 @@
+[
+    {
+        "texto":"CABA",
+        "valor": 1.013
+    },
+    {
+        "texto":"Tandil",
+        "valor": 1.004
+    },
+    {
+        "texto":"Costa Atlántica",
+        "valor": 1.029
+    },
+    {
+        "texto":"Patagonia Argentina",
+        "valor": 1.000
+    }
+]

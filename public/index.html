@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="./css/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Bootstrap icons css -->
+    <link rel="stylesheet" href="./css/bootstrap-icons/font/bootstrap-icons.min.css">
+    <!-- Select2 css -->
+    <link rel="stylesheet" href="./css/select2/dist/css/select2.min.css">
+    <!-- Select2 Bootstrap5 css -->
+    <link rel="stylesheet" href="./css/select2-theme-bootstrap5/dist/select2-bootstrap.css">
+    <!-- Custom dark mode para Select2 Bootstrap5 css -->
+    <link rel="stylesheet" href="./css/select2-bootstrap-dark.css">
+
+    <!-- Jquery -->
+    <script src="./js/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="./js/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Autonumeric -->
+    <script src="./js/autonumeric/dist/autoNumeric.min.js"></script>
+    <!-- Select2 -->
+    <script src="./js/Select2/dist/js/select2.min.js"></script>
+
+    <!-- Scripts propios -->
+    <script defer src="./js/theme.js"></script>
+    <script src="./js/seguros-hogar.js"></script>
+    <title>Seguros del hogar</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <nav class="navbar sticky-top bg-body-tertiary">
+
+      <div class="container-fluid">
+          <a href="/" class="navbar-brand">
+            <span class="fs-4">Simple header</span>
+          </a>
+    
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item">
+              <button id="btnSwitch" class="btn py-2 px-0 px-lg-2 d-flex align-items-center">
+                <i id="icon-theme" class="bi bi-sun"></i>
+              </button></li>
+          </ul>
+      </div>
+      </nav>
+
+    <!-- CARD -->
+    <div class="container" style=" height: 80vh; display: flex; justify-content: center; align-items: center;">
+      <div class="card text-center">
+        <div class="card-header">
+          <h3>Completa los datos solicitados</h3>
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="form-group">
+                <label for="tipoPropiedad">Seleccione tipo de propiedad</label>
+                <div class="mb-3" style="text-align: left;">
+                    <select class="form-control" id="tipoPropiedad" required></select> 
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ubicacion">Seleccione ubicación</label>
+                <div class="mb-3" style="text-align: left;">
+                    <select class="form-control" id="ubicacion" required></select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="metrosCuadrados">Ingresa los metros cuadrados:</label>
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="metrosCuadrados" required>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-primary"><i class="bi bi-calculator"></i> Cotizar póliza</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <nav class="navbar fixed-bottom bg-body-tertiary">
+
+      <div class="container-fluid">
+
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Company, Inc</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-twitter-x" width="24" height="24"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-instagram" width="24" height="24"></i></a></li>
+          <li class="ms-3"><a class="text-body-secondary" href="#"><i class="bi bi-facebook" width="24" height="24"></i></svg></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Modal de resultado -->
+    <div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog">
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-sm" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title w-100  text-center" id="modalTitleId">Cotización de la póliza</h5>
+              </div>
+              <div class="modal-body"></div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Aceptar</button>
+              </div>
+          </div>
+      </div>
+  </div>    
+</body>
+</html>

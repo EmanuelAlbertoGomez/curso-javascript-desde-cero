@@ -1,0 +1,30 @@
+[
+    {
+        "texto":"Casa",
+        "valor": 1.009
+    },
+    {
+        "texto":"P.H.",
+        "valor": 1.005
+    },
+    {
+        "texto":"Dto. Edificio",
+        "valor": 1.002
+    },
+    {
+        "texto":"Barrio Privado",
+        "valor": 1.019
+    },
+    {
+        "texto":"Oficina",
+        "valor": 1.039
+    },
+    {
+        "texto":"Local comercial",
+        "valor": 1.041
+    },
+    {
+        "texto":"Depósito logistica",
+        "valor": 1.092
+    }
+]

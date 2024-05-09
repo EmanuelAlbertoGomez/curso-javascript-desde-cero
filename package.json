@@ -1,0 +1,21 @@
+{
+  "name": "proyecto",
+  "version": "1.0.0",
+  "description": "Proyecto del curso Javascript",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autonumeric": "^4.10.5",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "express": "^4.19.2",
+    "jquery": "^3.7.1",
+    "select2": "^4.1.0-rc.0",
+    "select2-theme-bootstrap5": "^0.1.1",
+    "serve-favicon": "^2.5.0"
+  }
+}
