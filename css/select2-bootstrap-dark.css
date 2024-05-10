@@ -1,64 +1,9 @@
 /*!
- * Select2 Bootstrap 5 Theme v0.1.1 (https://angel-vladov.github.io/select2-theme-bootstrap-dark5)
- * Copyright 2022-2022 Angel Vladov and contributors (https://github.com/angel-vladov/select2-theme-bootstrap-dark5/graphs/contributors)
- * Based on the original select2/select2-bootstrap-dark-theme theme by Florian Kissling and contributors (https://github.com/select2/select2-bootstrap-dark-theme/graphs/contributors)
- * Licensed under MIT (https://github.com/angel-vladov/select2-theme-bootstrap-dark5/blob/master/LICENSE)
+ * Select2 Bootstrap 5 Theme v0.1.1 - Dark mode
  */
 
  .select2-container--bootstrap-dark {
     display: block;
-    /*------------------------------------*\
-        #COMMON STYLES
-    \*------------------------------------*/
-    /**
-     * Search field in the Select2 dropdown.
-     */
-    /**
-     * No outline for all search fields - in the dropdown
-     * and inline in multi Select2s.
-     */
-    /**
-     * Adjust Select2's choices hover and selected styles to match
-     * Bootstrap 5's default dropdown styles.
-     *
-     * @see https://getbootstrap.com/docs/5.0/components/dropdowns/
-     */
-    /**
-     * Clear the selection.
-     */
-    /**
-     * Address disabled Select2 styles.
-     *
-     * @see https://select2.github.io/examples.html#disabled
-     * @see https://getbootstrap.com/docs/5.0/forms/overview/#disabled-forms
-     */
-    /*------------------------------------*\
-        #DROPDOWN
-    \*------------------------------------*/
-    /**
-     * Dropdown border color and box-shadow.
-     */
-    /**
-     * Limit the dropdown height.
-     */
-    /*------------------------------------*\
-        #SINGLE SELECT2
-    \*------------------------------------*/
-    /*------------------------------------*\
-      #MULTIPLE SELECT2
-    \*------------------------------------*/
-    /**
-     * Address Bootstrap control sizing classes
-     *
-     * 1. Reset Bootstrap defaults.
-     * 2. Adjust the dropdown arrow button icon position.
-     *
-     * @see https://getbootstrap.com/docs/5.0/forms/form-control/#sizing
-     */
-    /* 1 */
-    /*------------------------------------*\
-      #RTL SUPPORT
-    \*------------------------------------*/
   }
   
   .select2-container--bootstrap-dark .select2-selection {
