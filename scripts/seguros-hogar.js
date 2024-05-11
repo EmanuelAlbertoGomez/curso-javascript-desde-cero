@@ -8,15 +8,15 @@ var options = {
 
 $(document).ready(function(){
 
-    restablecer();
+    $('#metrosCuadrados').val("");
     $('#tipoPropiedad').select2();
     $('#ubicacion').select2();
     new AutoNumeric('#metrosCuadrados', options);
     
-    // Carga el select de propiedades
-    loadSelectFrom("./mocks/propiedades.json","tipoPropiedad","Seleccione tipo de propiedad");
-    // Carga el select de ubicaciónes
-    loadSelectFrom("./mocks/ubicaciones.json","ubicacion","Seleccione ubicación");
+    // Carga el select de propiedades desde un json
+    loadSelectFrom("./mocks/propiedades.json","tipoPropiedad");
+    // Carga el select de ubicaciónes desde un json
+    loadSelectFrom("./mocks/ubicaciones.json","ubicacion");
 
     $("form").submit(function(){
         event.preventDefault();
@@ -27,15 +27,8 @@ $(document).ready(function(){
     });
 });
 
-// Restablecer los inputs y selects
-function restablecer(){
-    $('#ubicacion').val("");
-    $('#metrosCuadrados').val("");
-    $('#tipoPropiedad').val("");
-}
-
 // Carga un select desde un json y setea el placeholder
-function loadSelectFrom(jsonPathName, selectName, placeHolder){
+function loadSelectFrom(jsonPathName, selectName){
     // Obtener la referencia al select
     const select = $(`#${selectName}`);
 
@@ -44,10 +37,10 @@ function loadSelectFrom(jsonPathName, selectName, placeHolder){
     .then(response => response.json())
     .then(data => {
         // Limpiar el select antes de agregar nuevas opciones
-        select.empty();
+        //select.empty();
 
         // Agregar una opción por defecto
-        select.append($('<option>', { value: '', text: placeHolder, selected: true, disabled: true}));
+        //select.append($('<option>', { value: '', text: placeHolder, selected: true, disabled: true}));
 
         // Recorre el JSON (array de objeto) y agrega opciones al select
         data.forEach(objeto => {

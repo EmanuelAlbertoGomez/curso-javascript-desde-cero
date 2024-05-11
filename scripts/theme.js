@@ -55,6 +55,6 @@ function updateIcon(theme) {
 function updateSelect2(theme) {
     var bootstrapTheme = theme === 'dark' ? 'bootstrap-dark' : 'bootstrap';
     $("select.select2-hidden-accessible").each(function() {
-        $(this).select2({theme: bootstrapTheme});
+        $(this).select2({theme: bootstrapTheme, placeholder: "Seleccione una opción"});
     }); 
   }
