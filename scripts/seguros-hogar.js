@@ -27,7 +27,7 @@ $(document).ready(function(){
     });
 });
 
-// Carga un select desde un json y setea el placeholder
+// Carga un select desde un json
 function loadSelectFrom(jsonPathName, selectName){
     // Obtener la referencia al select
     const select = $(`#${selectName}`);
@@ -36,12 +36,6 @@ function loadSelectFrom(jsonPathName, selectName){
     fetch(jsonPathName)
     .then(response => response.json())
     .then(data => {
-        // Limpiar el select antes de agregar nuevas opciones
-        //select.empty();
-
-        // Agregar una opción por defecto
-        //select.append($('<option>', { value: '', text: placeHolder, selected: true, disabled: true}));
-
         // Recorre el JSON (array de objeto) y agrega opciones al select
         data.forEach(objeto => {
             select.append($('<option>', { value: objeto.valor, text: objeto.texto }));
